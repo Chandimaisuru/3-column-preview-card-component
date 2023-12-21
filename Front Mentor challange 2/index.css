@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;1,100;1,400&display=swap');
+
+:root {
+    --clr-ye: hsl(31, 77%, 52%);
+    --clr-bl: hsl(184, 100%, 22%);
+    --clr-gr: hsl(179, 100%, 13%);
+    --clr-bk: hsl(0, 0%, 95%);
+    --clr-font:hsla(0, 0%, 100%, 0.75);
+  
+  
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--clr-bk);
+    
+}
+
+.container{
+   display: flex;
+   flex-direction: row;
+   width: 750px;
+ 
+   margin-top: 180px;
+   border-radius: 10px;
+   overflow: hidden;
+
+
+}
+.box1{
+    background-color: var(--clr-ye); 
+    padding: 30px;
+  
+}
+
+
+.btn1{
+    color: var(--clr-ye);
+}
+
+
+.box2{
+    background-color:var(--clr-bl);
+    padding: 30px;
+   
+}
+
+.btn2{
+    color: var(--clr-bl);
+}
+
+.box3{
+    background-color: var(--clr-gr);
+    padding: 30px;
+  
+}
+
+.btn3{
+    color: var(--clr-gr);
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+img{
+    padding: auto;
+
+}
+
+h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    letter-spacing: .115em;
+    padding: 10px;
+    color: var(--clr-bk);
+    font-weight: 700;
+}
+
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--clr-font);
+    line-height: 1.5em;
+    
+}
+
+button{
+
+    margin-top: 50px;
+    justify-content: end;
+    background-color:var(--clr-bk);
+    border: 2px solid var(--clr-bk);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+  
+}
+
+button:hover{
+    color:var(--clr-bk);
+    background: transparent;
+    
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    
+}
